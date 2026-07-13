@@ -4,6 +4,19 @@ All notable changes to **app.tarefas** are recorded here. This file is
 maintained by [release-please](https://github.com/googleapis/release-please)
 based on [Conventional Commits](https://www.conventionalcommits.org/).
 
+## 1.0.0 (2026-07-13)
+
+
+### Features
+
+* Kanban board with dnd-kit + shadcn-style UI + tests + CI/CD ([82f05d9](https://github.com/dronreef2/app.tarefas/commit/82f05d9a17bc2ed5def3b83600fae706775cdf9b))
+* **todos:** add TodoApp with CRUD, filters, and localStorage persistence ([ec2c3a5](https://github.com/dronreef2/app.tarefas/commit/ec2c3a59eb06686e306a0e6bfaa23e17b84010c9))
+
+
+### Bug Fixes
+
+* **ci:** add @types/node so vite.config.ts compiles in CI ([dba5813](https://github.com/dronreef2/app.tarefas/commit/dba581379d23eb257058694bd8333581a3442584))
+
 ## [Unreleased]
 
 ### ✨ Features
