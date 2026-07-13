@@ -15,17 +15,22 @@ permissions:
 
 jobs:
   analyze:
-    name: Analyze
+    name: Analyze (${{ matrix.language }})
     runs-on: ubuntu-latest
     strategy:
       fail-fast: false
       matrix:
-        language: ['typescript-javascript']
+        include:
+          # The language identifier is `javascript-typescript`, not
+          # `typescript-javascript` (v3 silently no-op'd on the typo).
+          - language: javascript-typescript
+            build-mode: none
     steps:
       - uses: actions/checkout@v4
-      - uses: github/codeql-action/init@v3
+      - uses: github/codeql-action/init@v4
         with:
           languages: ${{ matrix.language }}
-      - uses: github/codeql-action/analyze@v3
+          build-mode: ${{ matrix.build-mode }}
+      - uses: github/codeql-action/analyze@v4
         with:
-          category: '/language:typescript'
+          category: '/language:${{ matrix.language }}'
