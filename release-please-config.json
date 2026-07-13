@@ -1,0 +1,20 @@
+{
+  "release-type": "node",
+  "package-name": "app.tarefas",
+  "bump-minor-pre-major": false,
+  "bump-patch-for-minor-pre-major": false,
+  "draft": false,
+  "include-component-in-tag": false,
+  "group-pull-request-title-pattern": "chore: release ${version}",
+  "changelog-sections": [
+    { "type": "feat", "section": "✨ Features" },
+    { "type": "fix", "section": "🐛 Bug Fixes" },
+    { "type": "perf", "section": "⚡ Performance" },
+    { "type": "refactor", "section": "♻️ Code Refactoring" },
+    { "type": "docs", "section": "📚 Documentation" },
+    { "type": "test", "section": "🧪 Tests" },
+    { "type": "build", "section": "📦 Build System" },
+    { "type": "ci", "section": "👷 CI/CD" },
+    { "type": "chore", "hidden": true }
+  ]
+}
